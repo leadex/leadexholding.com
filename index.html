@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leadex Holding GmbH — Financial Holding Group | Bad Homburg, Germany</title>
+  <meta name="description" content="Leadex Holding GmbH (HRB 17278) is a German financial holding group based in Bad Homburg, owning LEADEX CY LTD (Cyprus, HE380377) and LEADEX SYSTEMS L.L.C-FZ (Dubai, UAE). Operating under the Leadex Systems brand across Europe and the Middle East." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://leadexholding.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://leadexholding.com/" />
+  <meta property="og:site_name" content="Leadex Holding GmbH" />
+  <meta property="og:title" content="Leadex Holding GmbH — Financial Holding Group" />
+  <meta property="og:description" content="A German financial holding group connecting European and Middle Eastern markets through LEADEX CY LTD (Cyprus) and LEADEX SYSTEMS L.L.C-FZ (Dubai, UAE)." />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Leadex Holding GmbH — Financial Holding Group" />
+  <meta name="twitter:description" content="A German financial holding group connecting European and Middle Eastern markets through LEADEX CY LTD (Cyprus) and LEADEX SYSTEMS L.L.C-FZ (Dubai, UAE)." />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Corporation",
+        "@id": "https://leadexholding.com/#organization",
+        "name": "Leadex Holding GmbH",
+        "legalName": "Leadex Holding GmbH",
+        "url": "https://leadexholding.com/",
+        "email": "mail@leadexholding.com",
+        "telephone": "+4915888652234",
+        "description": "German financial holding group owning and operating Leadex Systems entities in Cyprus and the UAE, serving European and Middle Eastern markets.",
+        "foundingLocation": "Bad Homburg v. d. Höhe, Germany",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bad Homburg v. d. Höhe",
+          "addressCountry": "DE"
+        },
+        "identifier": [
+          { "@type": "PropertyValue", "name": "HRB", "value": "17278" },
+          { "@type": "PropertyValue", "name": "Amtsgericht", "value": "Bad Homburg v.d.H." }
+        ],
+        "subOrganization": [
+          { "@id": "https://leadexholding.com/#leadex-cy" },
+          { "@id": "https://leadexholding.com/#leadex-uae" }
+        ],
+        "sameAs": ["https://leadexsystems.com"]
+      },
+      {
+        "@type": "Corporation",
+        "@id": "https://leadexholding.com/#leadex-cy",
+        "name": "LEADEX CY LTD",
+        "legalName": "LEADEX CY LTD",
+        "url": "https://leadexsystems.com",
+        "areaServed": "Europe",
+        "foundingDate": "2018-02-23",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2-4 Galateias Street",
+          "addressLocality": "Paphos",
+          "postalCode": "8046",
+          "addressCountry": "CY"
+        },
+        "identifier": [
+          { "@type": "PropertyValue", "name": "Company Registration Number", "value": "HE380377" },
+          { "@type": "PropertyValue", "name": "VAT Number", "value": "CY10380377R" }
+        ],
+        "parentOrganization": { "@id": "https://leadexholding.com/#organization" }
+      },
+      {
+        "@type": "Corporation",
+        "@id": "https://leadexholding.com/#leadex-uae",
+        "name": "LEADEX SYSTEMS L.L.C-FZ",
+        "legalName": "LEADEX SYSTEMS L.L.C-FZ",
+        "url": "https://leadexsystems.com",
+        "areaServed": "Middle East",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Office 136, Regus Deira City Centre, Port Saeed Rd.",
+          "addressLocality": "Dubai",
+          "addressCountry": "AE"
+        },
+        "identifier": [
+          { "@type": "PropertyValue", "name": "Trade License", "value": "2200983.01" },
+          { "@type": "PropertyValue", "name": "VAT / TRN", "value": "104067824300003" },
+          { "@type": "PropertyValue", "name": "Free Zone", "value": "Meydan Free Zone" }
+        ],
+        "parentOrganization": { "@id": "https://leadexholding.com/#organization" }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:   #0b1829;
+      --navy2:  #112240;
+      --navy3:  #1a3354;
+      --gold:   #c9a44a;
+      --gold2:  #e8c97a;
+      --white:  #f4f6f9;
+      --muted:  #8a9ab5;
+      --border: rgba(201,164,74,0.18);
+      --radius: 12px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--navy);
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── LAYOUT ── */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    section { padding: 96px 0; }
+    section:first-of-type { padding-top: 0; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(11,24,41,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      line-height: 0;
+    }
+
+    .hero-logo {
+      margin-bottom: 24px;
+      line-height: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--gold); }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 70% 50%, rgba(201,164,74,0.07) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 80% at 20% 80%, rgba(17,34,64,0.8) 0%, transparent 70%);
+    }
+
+    .hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(201,164,74,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201,164,74,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 680px;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 28px;
+    }
+
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .hero h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.6rem, 5.5vw, 4rem);
+      line-height: 1.12;
+      color: #fff;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold2);
+    }
+
+    .hero-sub {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 520px;
+      line-height: 1.75;
+      margin-bottom: 44px;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    .meta-pill {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: rgba(201,164,74,0.08);
+      border: 1px solid var(--border);
+      border-radius: 32px;
+      font-size: 0.82rem;
+      color: var(--gold2);
+      font-weight: 500;
+    }
+
+    .meta-pill svg {
+      flex-shrink: 0;
+      opacity: 0.7;
+    }
+
+    /* ── DIVIDER ── */
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+    }
+
+    /* ── ABOUT ── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      line-height: 1.2;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .section-body {
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 0.975rem;
+    }
+
+    .section-body + .section-body { margin-top: 16px; }
+
+    .about-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .stat-cell {
+      background: var(--navy2);
+      padding: 28px 24px;
+    }
+
+    .stat-cell:hover { background: var(--navy3); transition: background 0.2s; }
+
+    .stat-value {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.9rem;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* ── ACTIVITIES ── */
+    .activities-list {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      margin-top: 48px;
+      max-width: 480px;
+    }
+
+    .activity-card {
+      background: var(--navy2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      transition: border-color 0.25s, transform 0.25s;
+    }
+
+    .activity-card:hover {
+      border-color: rgba(201,164,74,0.45);
+      transform: translateY(-3px);
+    }
+
+    .activity-icon {
+      width: 44px;
+      height: 44px;
+      background: rgba(201,164,74,0.1);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      color: var(--gold);
+    }
+
+    .activity-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .activity-desc {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    /* ── PORTFOLIO ── */
+    .portfolio-intro {
+      max-width: 600px;
+      margin-bottom: 56px;
+    }
+
+    .companies-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+
+    .company-card {
+      background: var(--navy2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: border-color 0.25s, transform 0.25s;
+    }
+
+    .company-card:hover {
+      border-color: rgba(201,164,74,0.45);
+      transform: translateY(-4px);
+    }
+
+    .company-header {
+      padding: 28px 32px 24px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+    }
+
+    .company-flag {
+      font-size: 2.2rem;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    .company-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.35rem;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 4px;
+    }
+
+    .company-region {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .company-body {
+      padding: 24px 32px 32px;
+    }
+
+    .company-desc {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    .company-details {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .detail-row {
+      display: flex;
+      gap: 12px;
+      font-size: 0.825rem;
+    }
+
+    .detail-key {
+      color: var(--muted);
+      min-width: 130px;
+      flex-shrink: 0;
+    }
+
+    .detail-val {
+      color: var(--white);
+      font-weight: 500;
+    }
+
+    /* ── BRAND ── */
+    .brand-section {
+      background: var(--navy2);
+      border-radius: 20px;
+      padding: 72px 64px;
+      text-align: center;
+      border: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .brand-section::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 300px;
+      background: radial-gradient(ellipse, rgba(201,164,74,0.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .brand-logo-text {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      color: var(--gold);
+      margin-bottom: 8px;
+      letter-spacing: 0.03em;
+    }
+
+    .brand-tagline {
+      font-size: 0.85rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+
+    .brand-body {
+      font-size: 1rem;
+      color: var(--muted);
+      max-width: 560px;
+      margin: 0 auto 36px;
+      line-height: 1.8;
+    }
+
+    .brand-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 28px;
+      background: transparent;
+      border: 1px solid var(--gold);
+      border-radius: 6px;
+      color: var(--gold);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .brand-link:hover {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    /* ── CONTACT ── */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 28px;
+    }
+
+    .contact-icon {
+      width: 42px;
+      height: 42px;
+      background: rgba(201,164,74,0.1);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--gold);
+    }
+
+    .contact-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .contact-value {
+      font-size: 0.975rem;
+      color: #fff;
+      font-weight: 500;
+    }
+
+    .contact-value a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .contact-value a:hover { color: var(--gold); }
+
+    .legal-box {
+      background: var(--navy2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+    }
+
+    .legal-title {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+
+    .legal-line {
+      font-size: 0.825rem;
+      color: var(--muted);
+      line-height: 2;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 0;
+    }
+
+    footer .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-copy {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .footer-links a {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--gold); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .about-grid,
+      .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+
+      .companies-grid { grid-template-columns: 1fr; }
+
+
+      .brand-section { padding: 48px 32px; }
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 0 20px; }
+      section { padding: 64px 0; }
+
+
+      .nav-links { display: none; }
+
+      .brand-section { padding: 40px 24px; }
+
+      .about-stats { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="container">
+      <a class="nav-logo" href="#" aria-label="Leadex Holding GmbH">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 140" height="36" aria-hidden="true">
+          <text x="30" y="82" font-family="Helvetica Neue, Arial, sans-serif" font-weight="700" letter-spacing="-0.02em" font-size="72" fill="#ffffff">leadex</text>
+          <circle cx="308" cy="38" r="11" fill="#F26A2E"/>
+          <line x1="340" y1="30" x2="340" y2="96" stroke="#ffffff" stroke-width="1.5"/>
+          <text x="360" y="58" font-family="Helvetica Neue, Arial, sans-serif" font-weight="300" letter-spacing="0.42em" font-size="18" fill="#ffffff">HOLDING</text>
+          <text x="360" y="86" font-family="Helvetica Neue, Arial, sans-serif" font-weight="300" letter-spacing="0.42em" font-size="14" fill="#bbbbbb">G M B H</text>
+        </svg>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#brand">Brand</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="sr-only">Leadex Holding GmbH — Financial Holding Group, Bad Homburg, Germany</h1>
+        <div class="hero-eyebrow">Financial Holding Group</div>
+        <div class="hero-logo" aria-label="Leadex Holding GmbH">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 200" height="110" aria-hidden="true">
+            <text x="60" y="100" font-family="Helvetica Neue, Arial, sans-serif" font-weight="700" letter-spacing="-0.02em" font-size="84" fill="#ffffff">leadex</text>
+            <circle cx="386" cy="46" r="12" fill="#F26A2E"/>
+            <line x1="60" y1="128" x2="400" y2="128" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+            <text x="60" y="162" font-family="Helvetica Neue, Arial, sans-serif" font-weight="300" letter-spacing="0.48em" font-size="17" fill="#bbbbbb">HOLDING GMBH</text>
+          </svg>
+        </div>
+        <p class="hero-sub">
+          A German-registered holding group bridging European and Middle Eastern markets
+          through financial services, technology, and strategic investments.
+        </p>
+        <div class="hero-meta">
+          <div class="meta-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Bad Homburg, Germany
+          </div>
+          <div class="meta-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+            HRB 17278 · Amtsgericht Bad Homburg
+          </div>
+          <div class="meta-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            Europe &amp; Middle East
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div>
+          <div class="section-label">Who We Are</div>
+          <h2 class="section-title">A holding group built for global reach</h2>
+          <p class="section-body">
+            Leadex Holding GmbH is a German holding company incorporated in Bad Homburg v. d. Höhe,
+            structured to manage and develop business assets across key international jurisdictions.
+          </p>
+          <p class="section-body" style="margin-top:16px;">
+            Through its subsidiaries, the group delivers technology-enabled services to clients in Europe
+            and the Middle East, operating under the unified <strong style="color:#fff;">Leadex Systems</strong> brand.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-cell">
+            <div class="stat-value">2</div>
+            <div class="stat-label">Subsidiaries</div>
+          </div>
+          <div class="stat-cell">
+            <div class="stat-value">2</div>
+            <div class="stat-label">Jurisdictions</div>
+          </div>
+          <div class="stat-cell">
+            <div class="stat-value">EU</div>
+            <div class="stat-label">Cyprus · Europe</div>
+          </div>
+          <div class="stat-cell">
+            <div class="stat-value">UAE</div>
+            <div class="stat-label">Dubai · MENA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="activities-list">
+        <div class="activity-card">
+          <div class="activity-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div class="activity-title">Financial Services</div>
+          <div class="activity-desc">Providing and facilitating financial services across European and MENA markets with regulatory compliance at every level.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="portfolio-intro">
+        <div class="section-label">Our Portfolio</div>
+        <h2 class="section-title">Two companies, one brand</h2>
+        <p class="section-body">
+          The holding group owns and operates two active entities, each focused on their respective regional market
+          and together forming the foundation of the Leadex Systems global presence.
+        </p>
+      </div>
+
+      <div class="companies-grid">
+
+        <!-- Cyprus -->
+        <div class="company-card">
+          <div class="company-header">
+            <div class="company-flag">🇨🇾</div>
+            <div>
+              <div class="company-name">LEADEX CY LTD</div>
+              <div class="company-region">Cyprus · European Market</div>
+            </div>
+          </div>
+          <div class="company-body">
+            <p class="company-desc">
+              The European operating entity of the group, incorporated in Paphos, Cyprus. Serves clients
+              across the European region under the Leadex Systems brand, providing technology-enabled
+              financial and business services.
+            </p>
+            <div class="company-details">
+              <div class="detail-row">
+                <span class="detail-key">Registration No.</span>
+                <span class="detail-val">HE380377</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-key">VAT Number</span>
+                <span class="detail-val">CY10380377R</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-key">Incorporated</span>
+                <span class="detail-val">23 February 2018</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-key">Jurisdiction</span>
+                <span class="detail-val">Republic of Cyprus</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-key">Address</span>
+                <span class="detail-val">2-4 Galateias Street, Paphos 8046, Cyprus</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- UAE -->
+        <div class="company-card">
+          <div class="company-header">
+            <div class="company-flag">🇦🇪</div>
+            <div>
+              <div class="company-name">LEADEX SYSTEMS L.L.C-FZ</div>
+              <div class="company-region">UAE · Middle East Market</div>
+            </div>
+          </div>
+          <div class="company-body">
+            <p class="company-desc">
+              The Middle East operating entity of the group, registered in the Meydan Free Zone, Dubai.
+              Serves clients across the MENA region and operates from the Deira City Centre business hub
+              in Dubai.
+            </p>
+            <div class="company-details">
+              <div class="detail-row">
+                <span class="detail-key">Trade License</span>
+                <span class="detail-val">2200983.01</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-key">VAT / TRN</span>
+                <span class="detail-val">104067824300003</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-key">Free Zone</span>
+                <span class="detail-val">Meydan Free Zone</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-key">Jurisdiction</span>
+                <span class="detail-val">United Arab Emirates</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-key">Address</span>
+                <span class="detail-val">Office 136, Regus Deira City Centre, Dubai, UAE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- BRAND -->
+  <section id="brand">
+    <div class="container">
+      <div class="brand-section">
+        <div class="brand-logo-text">Leadex Systems</div>
+        <div class="brand-tagline">One brand · Two markets · Global reach</div>
+        <p class="brand-body">
+          Both group entities operate under the <strong style="color:#fff;">Leadex Systems</strong> brand —
+          a unified identity representing the group's commitment to consistent service standards,
+          technology-forward solutions, and trusted client relationships across Europe and the Middle East.
+        </p>
+        <a class="brand-link" href="https://leadexsystems.com" target="_blank" rel="noopener">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          Visit leadexsystems.com
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <div class="section-label">Get in Touch</div>
+          <h2 class="section-title">Contact the Holding</h2>
+          <p class="section-body" style="margin-bottom: 40px;">
+            For enquiries related to the holding group, corporate matters,
+            or investor relations, reach us directly.
+          </p>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value"><a href="mailto:mail@leadexholding.com">mail@leadexholding.com</a></div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.67 3.44 2 2 0 0 1 3.63 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.06 6.06l1.81-1.81a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">Phone</div>
+              <div class="contact-value"><a href="tel:+4915888652234">+49 158 88 652234</a></div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">Registered Office</div>
+              <div class="contact-value">Bad Homburg v. d. Höhe, Germany</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="legal-box">
+            <div class="legal-title">Legal Information</div>
+            <div class="legal-line"><strong style="color:#c4cdd9;">Company</strong><br/>Leadex Holding GmbH</div>
+            <div class="legal-line" style="margin-top:14px;"><strong style="color:#c4cdd9;">Registration</strong><br/>HRB 17278<br/>Amtsgericht Bad Homburg v.d.H.</div>
+            <div class="legal-line" style="margin-top:14px;"><strong style="color:#c4cdd9;">Registered Address</strong><br/>Basler Straße, Bad Homburg v. d. Höhe<br/>Germany</div>
+            <div class="legal-line" style="margin-top:14px;"><strong style="color:#c4cdd9;">Business Activities</strong><br/>
+              Financial services · Financial holding
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-copy">
+        &copy; 2026 Leadex Holding GmbH. All rights reserved.
+      </div>
+      <div class="footer-links">
+        <a href="https://leadexsystems.com" target="_blank" rel="noopener">leadexsystems.com</a>
+        <a href="mailto:mail@leadexholding.com">mail@leadexholding.com</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

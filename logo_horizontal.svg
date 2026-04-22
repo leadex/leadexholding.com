@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 140" width="600" height="140">
+  <defs>
+    <style>
+      .wordmark { font-family: 'Helvetica Neue', 'Arial', sans-serif; font-weight: 700; letter-spacing: -0.02em; }
+      .holding { font-family: 'Helvetica Neue', 'Arial', sans-serif; font-weight: 300; letter-spacing: 0.42em; }
+    </style>
+  </defs>
+  <text x="30" y="82" class="wordmark" font-size="72" fill="#1a1a1a">leadex</text>
+  <circle cx="308" cy="38" r="11" fill="#F26A2E"/>
+  <line x1="340" y1="30" x2="340" y2="96" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="360" y="58" class="holding" font-size="18" fill="#1a1a1a">HOLDING</text>
+  <text x="360" y="86" class="holding" font-size="14" fill="#6b6b6b">G M B H</text>
+</svg>
